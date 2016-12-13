@@ -8,7 +8,7 @@ from tensorflow_test import *
 from numpy import asarray
 
 #socket IP 端口
-host = '183.175.12.160'
+host = '0.0.0.0'
 port = 9999
 addr = (host, port)
 
