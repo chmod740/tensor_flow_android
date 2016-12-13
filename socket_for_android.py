@@ -19,6 +19,7 @@ class Servers(SRH):
             try:
                 data = self.request.recv(1280)
                 test = data.decode('utf-8')
+                print(test)
                 test = test.replace("\n", "")
                 fft_final = fft(test)#fft函数调用
                 data = tf_mul(fft_final)#tensorflow矩阵乘法调用
